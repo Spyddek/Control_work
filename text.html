@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Логотипы HexaCore</title>
+  <style>
+    /* Сброс отступов */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+    /* Подпись над рамкой */
+    .caption {
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    /* Общая рамка для логотипов */
+    .logo-wrapper {
+      border: 1px solid #ccc;
+      padding: 20px;
+      background-color: #fff;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    /* Общий стиль для каждого логотипа */
+    .logo-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .logo-item:last-child {
+      margin-bottom: 0;
+    }
+    /* Стили для иконки – представлена шестигранной фигурой */
+    .icon {
+      width: 60px;
+      height: 60px;
+      margin-right: 15px;
+      /* Используем clip-path для создания формы шестиугольника */
+      clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    }
+    /* Текстовая часть логотипа */
+    .logo-text {
+      font-size: 28px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+    /* Верхний логотип: желто-зеленая иконка + белый текст */
+    .logo-top .icon {
+      background: linear-gradient(135deg, #aee571, #8bc34a);
+    }
+    .logo-top .logo-text {
+      color: #fff;
+    }
+    /* Средний логотип: желто-зеленая иконка и текст с эффектом свечения */
+    .logo-middle .icon {
+      background: linear-gradient(135deg, #aee571, #8bc34a);
+      /* можно добавить небольшой эффект свечения для иконки, используя filter */
+      filter: drop-shadow(0 0 6px #8bc34a);
+    }
+    .logo-middle .logo-text {
+      color: #8bc34a;
+      text-shadow: 0 0 8px #8bc34a;
+    }
+    /* Нижний логотип: желто-зеленая иконка и текст без эффекта свечения */
+    .logo-bottom .icon {
+      background: linear-gradient(135deg, #aee571, #8bc34a);
+    }
+    .logo-bottom .logo-text {
+      color: #8bc34a;
+    }
+  </style>
+</head>
+<body>
+  <div class="caption">Лого</div>
+  <div class="logo-wrapper">
+    <!-- Верхний логотип -->
+    <div class="logo-item logo-top">
+      <div class="icon"></div>
+      <div class="logo-text">HexaCore</div>
+    </div>
+    <!-- Средний логотип -->
+    <div class="logo-item logo-middle">
+      <div class="icon"></div>
+      <div class="logo-text">HexaCore</div>
+    </div>
+    <!-- Нижний логотип -->
+    <div class="logo-item logo-bottom">
+      <div class="icon"></div>
+      <div class="logo-text">HexaCore</div>
+    </div>
+  </div>
+</body>
+</html>

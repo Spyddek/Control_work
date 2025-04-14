@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'Plex_Mono';
+    src: url('/Fonts/ibmplexmono-regular-webfont.woff') format('woff'),
+         url('/Fonts/ibmplexmono-regular-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NeueMachina_Medium';
+    src: url('/Fonts/ppneuemachina-light-webfont.woff2') format('woff2'),
+         url('/Fonts/ppneuemachina-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NeueMachina_Regular';
+    src: url('/Fonts/ppneuemachina-regular-webfont.woff2') format('woff2'),
+         url('/Fonts/ppneuemachina-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NeueMachina_Bold';
+    src: url('/Fonts/ppneuemachina-ultrabold-webfont.woff2') format('woff2'),
+         url('/Fonts/ppneuemachina-ultrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    background-color: #17161E;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: NeueMachina_Bold, sans-serif;
+    font-weight: 700;
+    font-size: 5.625em;
+    line-height: 120%;
+    color: #ffffff;
+}
+
+h2 {
+    font-family: NeueMachina_Bold, sans-serif;
+    font-weight: 700;
+    font-size: 4em;
+    line-height: 120%;
+    color: #ffffff;
+}
+
+h3 {
+    font-family: NeueMachina_Regular, sans-serif;
+    font-weight: 500;
+    font-size: 2em;
+    line-height: 120%;
+    color: #ffffff;
+}
+
+.text-large {
+    font-family: NeueMachina_medium, sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+    line-height: 140%;
+    color: #ffffff;
+}
+
+.text-regular {
+    font-family: Plex_Mono, sans-serif;
+    font-weight: 400;
+    font-size: 1.125em;
+    line-height: 140%;
+    color: #ffffff;
+}
+
+.text-small {
+    font-family: Plex_Mono, sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 140%;
+    color: #ffffff;
+}
+
+.header_menu{
+    display: inline-flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 64px;
+}
+
+.substrate {
+    width: 687;
+    height: 60;
+    border-radius: 15px;
+    border-width: 1px;
+}
