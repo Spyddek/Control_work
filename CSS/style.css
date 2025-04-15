@@ -31,7 +31,6 @@
     margin: 0%;
     box-sizing: border-box;
 }
-
 h1 {
     font-family: NeueMachina_Bold, sans-serif;
     font-weight: 700;
@@ -39,7 +38,6 @@ h1 {
     line-height: 120%;
     color: #ffffff;
 }
-
 h2 {
     font-family: NeueMachina_Bold, sans-serif;
     font-weight: 700;
@@ -47,7 +45,6 @@ h2 {
     line-height: 120%;
     color: #ffffff;
 }
-
 h3 {
     font-family: NeueMachina_Regular, sans-serif;
     font-weight: 500;
@@ -55,7 +52,6 @@ h3 {
     line-height: 120%;
     color: #ffffff;
 }
-
 .text-large {
     font-family: NeueMachina_medium, sans-serif;
     font-weight: 400;
@@ -63,7 +59,6 @@ h3 {
     line-height: 140%;
     color: #ffffff;
 }
-
 .text-regular {
     font-family: Plex_Mono, sans-serif;
     font-weight: 400;
@@ -71,13 +66,20 @@ h3 {
     line-height: 140%;
     color: #ffffff;
 }
-
 .text-small {
     font-family: Plex_Mono, sans-serif;
     font-weight: 400;
     font-size: 1em;
     line-height: 140%;
     color: #ffffff;
+}
+
+header {
+    width: 1720;
+    height: 60;
+    top: 30px;
+    left: 100px;
+    gap: 823px;
 }
 
 .header_menu{
@@ -88,9 +90,48 @@ h3 {
     gap: 64px;
 }
 
-.substrate {
+.header_menu option {
+    color: #838383;
+    text-decoration: none;
+    font-family: Plex_Mono;
+}
+
+.caption {
+    display: flex;
     width: 687;
     height: 60;
     border-radius: 15px;
     border-width: 1px;
+    border: 1px solid var(--10, #E3FE0F1A);
+    margin: 20px 80px;
+    padding: 5px 25px;
+}
+.logo {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 24.006668090820312;
+    height: 28;
+    gap: 5px;
+}
+
+.HexaCore {
+    width: 144.04000854492188;
+    height: 21;
+    top: 3.55px;
+    left: 35.96px;
+}
+
+.vector {
+    margin-left: 12px;
+    font-weight: bold;
+    color: #fff;
+    top: 9.43px;
+    left: 164.26px;
+}
+
+.vector a {
+    color: #ffffff;
+    text-decoration: none;
 }
