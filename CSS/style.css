@@ -30,6 +30,8 @@
     background-color: #17161E;
     margin: 0%;
     box-sizing: border-box;
+    list-style: none;
+    text-decoration: none ;
 }
 h1 {
     font-family: NeueMachina_Bold, sans-serif;
@@ -87,7 +89,6 @@ header {
     flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: center;
-    gap: 64px;
 }
 
 .header_menu option {
@@ -106,6 +107,7 @@ header {
     margin: 20px 80px;
     padding: 5px 25px;
 }
+
 .logo {
     display: flex;
     flex-flow: row nowrap;
@@ -134,4 +136,47 @@ header {
 .vector a {
     color: #ffffff;
     text-decoration: none;
+}
+
+header nav ul li {
+    position: relative;
+    float: left;
+}
+
+header nav ul li a {
+    padding: 0px 25px;
+    color: #838383;
+    display: block;
+}
+
+header nav ul li a:hover {
+    color: #ffffff;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: #17161E;
+    padding-inline-start:0;
+    line-height: 200%;
+    width: 150%;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+header button{
+    color: #E3FE0F;
+    border: 1px #E3FE0F solid;
+    background: var(--, #E3FE0F);
+    padding: 8px 37px;
+    border-radius: 7px ;
+}
+
+.position_left {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
 }
