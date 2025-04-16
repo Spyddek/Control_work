@@ -76,12 +76,35 @@ h3 {
     color: #ffffff;
 }
 
+@keyframes rotated_logo {
+
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 header {
-    width: 1720;
-    height: 60;
     top: 30px;
     left: 100px;
     gap: 823px;
+}
+
+.header_section {
+    display: flex;
+    justify-content: space-between; /* распределяем пространство между блоками */
+    align-items: center;            /* по вертикали выравниваем */
+    gap: 20px;                      /* при необходимости задайте отступ между блоками */
+}
+
+.header_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
 }
 
 .header_menu{
@@ -91,21 +114,47 @@ header {
     align-items: center;
 }
 
-.header_menu option {
+.header_menu nav ul li {
+    position: relative;
+}
+
+.header_menu nav ul li a {
+    padding: 0px 10px;
     color: #838383;
-    text-decoration: none;
-    font-family: Plex_Mono;
+    display: block;
+}
+
+.header_menu nav ul li ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: #17161E;
+    padding-inline-start: 0;
+    line-height: 200%;
+    width: 150%;
+}
+
+.header_menu nav ul li:hover > ul {
+    display: block;
+}
+
+.header_menu nav ul li a:hover {
+    color: #ffffff;
 }
 
 .caption {
     display: flex;
-    width: 687;
-    height: 60;
+    align-items: center;
     border-radius: 15px;
-    border-width: 1px;
-    border: 1px solid var(--10, #E3FE0F1A);
-    margin: 20px 80px;
+    border: 1px solid #E3FE0F1A;
     padding: 5px 25px;
+    width: auto;
+    height: auto;
+}
+
+.logo_menu {
+    display: inline-flex;
+    margin-top: 100px;
 }
 
 .logo {
@@ -125,6 +174,27 @@ header {
     left: 35.96px;
 }
 
+.nav_links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: 20px;
+}
+  
+.nav_links li {
+    position: relative;
+}
+  
+.nav_links li a {
+    padding: 0px 10px;
+    color: #838383;
+    display: block;
+}
+  
+.nav_links li a:hover {
+    color: #ffffff;
+}
+
 .vector {
     margin-left: 12px;
     font-weight: bold;
@@ -139,8 +209,9 @@ header {
 }
 
 header nav ul li {
-    position: relative;
-    float: left;
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 header nav ul li a {
@@ -167,16 +238,183 @@ nav ul li:hover > ul {
     display: block;
 }
 
-header button{
+.dapp_button {
     color: #E3FE0F;
-    border: 1px #E3FE0F solid;
-    background: var(--, #E3FE0F);
+    border: 1px solid #E3FE0F;
     padding: 8px 37px;
-    border-radius: 7px ;
+    border-radius: 7px;
+    background-color: transparent;
+    cursor: pointer;
 }
 
-.position_left {
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.dapp_button:hover {
+    background: #E3FE0F;
+    box-shadow: 0px 4px 25px 0px #E3FE0F80;
+    border: 1px solid #E3FE0F;
+    color: #17161E;
+}
+
+.dapp_button:active {
+    box-shadow: 0px 4px 4px 0px #17161E66 inset;
+}
+
+main {
+    margin: 0 auto;
+    padding: 20px;
+    
+    /* Используем flex-контейнер для центровки контента */
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
+    align-items: center;   /* Центровка по горизонтали */ /* Центровка по вертикали, если нужно */
+    
+    /* Если требуется вертикальное центрирование относительно окна браузера,
+       можно задать минимальную высоту */
+    min-height: 100vh;
+
+}
+
+.main_logo {
+    flex: 1;
+    width: 1100px;
+}
+
+.main_logo p {
+    color: #ffffff;
+}
+
+.main_logo img {
+    transform: translate(-50%, 100px) ;
+    border-radius: 50%;
+    animation: rotated_logo 40s linear infinite;
+}
+
+.main_logo span {
+    color: #E3FE0F;
+}
+
+.highlight {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+  
+.highlight::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 310px;
+    height: 30px;
+    background: url('/img-Main/Волна.svg') no-repeat center;
+    background-size: contain;
+}
+
+.main_p {
+    margin-top: 20px;
+    bottom: 20px;
+}
+
+.button_main {
+    display: flex;
+    width: 1100px;
+    margin-top: 51px;
+    gap: 20px;
+}
+
+.button_main_view {
+    display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 41px;
+    text-align: start;
+    width: 270px;
+    background-color: #E3FE0F;
+    color: black;
+    border: 1px solid #E3FE0F;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.button_main_view:hover {
+    background: #E3FE0F;
+    box-shadow: 0px 4px 25px 0px #E3FE0F80;
+    border: 1px solid #E3FE0F;
+    color: #17161E;
+}
+
+.button_main_view:active {
+    box-shadow: 0px 4px 4px 0px #17161E66 inset;
+}
+
+.button_main_buy {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 41px;
+    text-align: start;
+    height: 70px;
+    width: 270px;
+    background-color: #17161E;
+    color: #ffffff;
+    border: 0.1px solid #ffffff;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.button_main_buy:hover {
+    background: #E3FE0F;
+    box-shadow: 0px 4px 25px 0px #E3FE0F80;
+    border: 1px solid #E3FE0F;
+    color: #17161E;
+}
+
+.button_main_buy:active {
+    box-shadow: 0px 4px 4px 0px #17161E66 inset;
+}
+
+.usd_wrap {
+    display: flex;
+    gap: 62px;
+}
+
+.text_USD {
+    display: flex;
+    align-items: center;
+    width: 183px;
+    height: 49px;
+    margin-top: 147px;
+}
+
+.text_USD span {
+    align-items: flex-start;
+    color: #838383;
+    font-size: 16px;
+}
+
+.img_Chart {
+    flex: 1;
+    
+    display: flex;
+    justify-content: end;
+}
+
+.Advantages {
+    align-self: flex-start;
+    width: 100%;
+    padding-top: 250px;
+    margin: 0;
+}
+
+.Advantages h2 {
+    text-align: left;
+    margin: 0;
 }
