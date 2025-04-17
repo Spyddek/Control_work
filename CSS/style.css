@@ -97,9 +97,9 @@ header {
 }
 
 main {
-    display: flex;           /* включаем flex-контейнер */
-    flex-direction: column; /* вертикальное выравнивание по центру */
-    align-items: center;     /* горизонтальное выравнивание по центру */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 0 auto;
     padding: 20px;
     min-height: 100vh;
@@ -107,9 +107,9 @@ main {
 
 .header_section {
     display: flex;
-    justify-content: space-between; /* распределяем пространство между блоками */
-    align-items: center;            /* по вертикали выравниваем */
-    gap: 20px;                      /* при необходимости задайте отступ между блоками */
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
 }
 
 .header_wrapper {
@@ -481,9 +481,9 @@ nav ul li:hover > ul {
 
 .roadmap-section {
     max-width: 1800px;
-    margin-top: 250px; /* отступ сверху, если нужно */
-    padding: 20px 0;   /* внутренние отступы для отделения содержимого */
-    clear: both;       /* если предыдущие блоки используют float */
+    margin-top: 250px;
+    padding: 20px 0;
+    clear: both;
 }
 
 .roadmap-section h2{
@@ -535,10 +535,8 @@ nav ul li:hover > ul {
 
 .info-container {
     max-width: 1035px;
-    /* Удаляем или меняем max-height, чтобы контейнер не обрезался:
-       max-height: 493px; */
     margin: 0 auto;
-    padding: 20px; /* Добавляем отступы внутри контейнера */
+    padding: 20px;
 }
 
 .info-table {
@@ -584,8 +582,13 @@ nav ul li:hover > ul {
 
 .start {
     display: flex;
-    width: 620px;
+    width: 779px;
     height: 338px;
+}
+
+.start_text {
+    display: flex;
+    width: 620px;
 }
 
 .main_logo h1 {
@@ -640,4 +643,113 @@ nav ul li:hover > ul {
 
 .intermediate_text span {
     color: #E3FE0F;
+}
+
+.form-container {
+    max-width: 1041px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.form-container p {
+    display: flex;
+    text-align: left;
+    font-size: 16px;
+    font-family: Plex_Mono, sans-serif;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 200px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 30px;
+    margin-bottom: 20px;
+    background-color: #17161E;
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: Plex_Mono, sans-serif;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+input[type='text_2'] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 30px 30px 100px 30px;
+    background-color: #17161E;
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: Plex_Mono, sans-serif;
+    box-sizing: border-box;
+    border-radius: 15px;
+    border-width: 1px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #17161E;
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: Plex_Mono, sans-serif;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.submit-btn {
+    display: inline-block;
+    width: 100%;
+    padding: 12px;
+    background-color: #E3FE0F;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.submit-btn:hover {
+    background-color: #E3FE0F;
+    box-shadow: 0px 4px 25px 0px #E3FE0F80;
+    border: 1px solid #E3FE0F;
+    color: #17161E;
+}
+
+.submit-btn::after {
+    box-shadow: 0px 4px 4px 0px #17161E66 inset;
+}
+
+.disclaimer {
+    margin-top: 15px;
+    font-size: 12px;
+    color: #999;
+    line-height: 1.4;
+    text-align: center;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #ffffff;
+  opacity: 1;
 }
