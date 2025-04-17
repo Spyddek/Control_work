@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Vuetoken Info</title>
+  <style>
+    /* Сброс базовых стилей */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #000; /* Тёмный фон */
+      font-family: Arial, sans-serif;
+      color: #fff;
+      padding: 20px;
+    }
+
+    /* Контейнер для всей “таблицы” */
+    .info-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* Сетка для пар “Название / Значение” */
+    .info-table {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 10px; /* Расстояние между карточками */
+      margin-bottom: 20px; /* Отступ снизу, где будет адрес */
+    }
+
+    /* Каждая пара “Название / Значение” */
+    .info-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #1a1a1a; /* Тёмная подложка */
+      border: 1px solid #333;
+      border-radius: 6px;
+      padding: 10px;
+    }
+
+    .label {
+      color: #ccc;      /* Цвет текста для названия */
+      font-weight: bold;
+    }
+
+    .value {
+      background-color: #f7ff00; /* Яркий цвет */
+      color: #000;
+      padding: 5px 10px;
+      border-radius: 3px;
+      font-weight: bold;
+    }
+
+    /* Блок для адреса */
+    .address-block {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #f7ff00; /* Тот же яркий цвет */
+      color: #000;
+      padding: 10px;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    /* Иконка копирования (можно заменить на свою) */
+    .copy-icon {
+      cursor: pointer;
+      margin-left: 10px;
+      font-size: 18px;
+      user-select: none; /* Чтобы текст не выделялся по клику */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="info-container">
+    <!-- “Таблица” с информацией -->
+    <div class="info-table">
+      <div class="info-item">
+        <div class="label">Token</div>
+        <div class="value">Vuetoken</div>
+      </div>
+      <div class="info-item">
+        <div class="label">Symbol</div>
+        <div class="value">VUET</div>
+      </div>
+      <div class="info-item">
+        <div class="label">Total supply</div>
+        <div class="value">100M</div>
+      </div>
+      <div class="info-item">
+        <div class="label">Launch</div>
+        <div class="value">Fair launch</div>
+      </div>
+      <div class="info-item">
+        <div class="label">Chain</div>
+        <div class="value">TRC-20</div>
+      </div>
+      <div class="info-item">
+        <div class="label">Taxes</div>
+        <div class="value">5% / 5%</div>
+      </div>
+    </div>
+
+    <!-- Адрес (длинная строка) -->
+    <div class="address-block">
+      0x125bd0b2240cc83c388d37bbf31aa5fcbf7e870
+
+      <!-- Условная иконка копирования -->
+      <div class="copy-icon" onclick="copyAddress()">📋</div>
+    </div>
+  </div>
+
+  <script>
+    // Пример простого копирования текста в буфер
+    function copyAddress() {
+      const address = '0x125bd0b2240cc83c388d37bbf31aa5fcbf7e870';
+      navigator.clipboard.writeText(address)
+        .then(() => {
+          alert('Адрес скопирован!');
+        })
+        .catch(err => {
+          console.error('Не удалось скопировать: ', err);
+        });
+    }
+  </script>
+</body>
+</html>

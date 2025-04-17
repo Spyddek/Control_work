@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Регистрация</title>
+  <!-- Подключение вашего CSS -->
+  <link rel="stylesheet" href="CSS/styles.css" />
+</head>
+<body>
+  <!-- Header (скопирован из index.html) -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <!-- Другие пункты меню, если есть -->
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Основной контент с формой регистрации -->
+  <main>
+    <h1>Регистрация</h1>
+    <form action="#" method="post">
+      <!-- Группа: Личная информация -->
+      <fieldset>
+        <legend>Личная информация</legend>
+
+        <div class="form-group">
+          <label for="name">Имя <span style="color:red;">*</span></label>
+          <input 
+            type="text" 
+            id="name" 
+            name="name" 
+            placeholder="Иван" 
+            required 
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="birthdate">Дата рождения <span style="color:red;">*</span></label>
+          <input 
+            type="date" 
+            id="birthdate" 
+            name="birthdate" 
+            required 
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="gender">Пол <span style="color:red;">*</span></label>
+          <select id="gender" name="gender" required>
+            <option value="">Выберите...</option>
+            <option value="male">Мужской</option>
+            <option value="female">Женский</option>
+            <option value="other">Другое</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Пароль <span style="color:red;">*</span></label>
+          <input 
+            type="password" 
+            id="password" 
+            name="password" 
+            placeholder="••••••" 
+            required 
+          />
+        </div>
+      </fieldset>
+
+      <!-- Группа: Контактные данные -->
+      <fieldset>
+        <legend>Контактные данные</legend>
+
+        <div class="form-group">
+          <label for="email">Email <span style="color:red;">*</span></label>
+          <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            placeholder="example@mail.com" 
+            required 
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Телефон <span style="color:red;">*</span></label>
+          <input 
+            type="tel" 
+            id="phone" 
+            name="phone" 
+            placeholder="+7(123)456-78-90" 
+            required 
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="contact-time">Удобный интервал для связи</label>
+          <select id="contact-time" name="contact-time">
+            <option value="morning">Утро</option>
+            <option value="day">День</option>
+            <option value="evening">Вечер</option>
+            <option value="night">Ночь</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <!-- Кнопки отправки и сброса -->
+      <div class="form-actions">
+        <button type="submit">
+          <span>Зарегистрироваться</span>
+          <!-- Здесь может быть иконка, например <i class="fa fa-check"></i> -->
+        </button>
+        <button type="reset">
+          <span>Сброс</span>
+          <!-- Здесь может быть иконка, например <i class="fa fa-times"></i> -->
+        </button>
+      </div>
+    </form>
+  </main>
+
+  <!-- Footer (скопирован из index.html) -->
+  <footer>
+    <p>Здесь может располагаться ваш «подвал» сайта. Контактная информация, копирайты и т.п.</p>
+  </footer>
+</body>
+</html>
