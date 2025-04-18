@@ -206,22 +206,86 @@
               <label for="email">Email</label>
               <input type="text" id="email" name="email" placeholder="Enter email" />
         
-              <button type="submit" class="submit-btn text-large">Send</button>
+              <button class="submit-btn text-large">Send</button>
               <p class="disclaimer text-small">
                 By submitting this form, you consent to the collection and processing of your personal data
                 in accordance with our privacy policy.
               </p>
             </form>
         </div>
-        <div class="FAQ_menu">
-            <div class="FAQ_logo">
-                    <h2>FAQ</h2>
-
+        <section class="faq">
+            <!-- Левый столбец -->
+            <div class="faq__left">
+                <h2 class="faq__title">FAQ</h2>
+    
+                <p class="text-regular">
+                    In this section we have posted answers to frequently asked questions.
+                    If you have another question, you can email us
+                </p>
+    
+                <button class="faq__btn text-large">
+                    Write to us        
+                    <span class="icon-mail"></span>
+                  </button>
             </div>
-            <div>
-                
+    
+            <!-- Правый столбец (аккордеон) -->
+            <div class="faq__right">
+                <details class="faq-item">
+                    <summary>
+                        How much will I earn by staking $GPU?
+                        <svg class="icon-arrow" width="16" height="9" viewBox="0 0 16 9" fill="none">
+                            <path d="M1 1L8 8L15 1" stroke="currentColor" stroke-width="1.5"
+                                  stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </summary>
+                    <p>
+                        Your earnings depend on the amount of $GPU you stake and the annual
+                        percentage yield at that time. Rewards are automatically added to
+                        your wallet.
+                    </p>
+                </details>
+    
+                <details class="faq-item">
+                    <summary>How do I buy $GPU?
+                        <svg class="icon-arrow" width="16" height="9" viewBox="0 0 16 9" fill="none">
+                            <path d="M1 1L8 8L15 1" stroke="currentColor" stroke-width="1.5"
+                                  stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </summary>
+                    <p>
+                        $GPU can be bought on major DEXes such as Uniswap and Sushiswap.
+                        Make sure you're using the correct contract address.
+                    </p>
+                </details>
+    
+                <details class="faq-item">
+                    <summary>How secure is a GPU Node?
+                        <svg class="icon-arrow" width="16" height="9" viewBox="0 0 16 9" fill="none">
+                            <path d="M1 1L8 8L15 1" stroke="currentColor" stroke-width="1.5"
+                                  stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </summary>
+                    <p>
+                        All nodes are hardened using industry best practices, run inside
+                        isolated containers and are continuously monitored.
+                    </p>
+                </details>
+    
+                <details class="faq-item">
+                    <summary>How can I access my Node?
+                        <svg class="icon-arrow" width="16" height="9" viewBox="0 0 16 9" fill="none">
+                            <path d="M1 1L8 8L15 1" stroke="currentColor" stroke-width="1.5"
+                                  stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </summary>
+                    <p>
+                        You will receive SSH credentials after deployment. All traffic is
+                        encrypted and protected by a firewall.
+                    </p>
+                </details>
             </div>
-        </div>
+        </section>
     </main>
 </body>
 </html>
