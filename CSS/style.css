@@ -32,7 +32,6 @@
     list-style: none;
     text-decoration: none;
 }
-
 h1 {
     font-family: 'NeueMachina_Bold', sans-serif;
     font-weight: 700;
@@ -54,7 +53,6 @@ h3 {
     line-height: 120%;
     color: #ffffff;
 }
-
 .text-large {
     font-family: 'NeueMachina_Medium', sans-serif;
     font-weight: 400;
@@ -76,7 +74,6 @@ h3 {
     line-height: 140%;
     color: #ffffff;
 }
-
 @keyframes rotated_logo {
     0% {
         transform: rotate(0deg);
@@ -115,7 +112,7 @@ main {
 }
 
 .header_menu {
-    display: flex;
+    display: inline-flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: center;
@@ -156,8 +153,11 @@ main {
 }
 
 .logo_menu {
-    display: inline-flex;
-    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1720px;
 }
 .logo {
     display: flex;
@@ -375,9 +375,10 @@ nav ul li:hover > ul {
 .Advantages {
     display: flex;
     flex-direction: column;
-    text-align: left;
-    align-self: flex-start;
-    max-width: 1720px;
+    text-align: center;
+    align-self: center;
+    margin: 0 auto;
+    width: 1720px;
     max-height: 745px;
     margin-top: 50px;
     height: fit-content;
@@ -458,6 +459,7 @@ nav ul li:hover > ul {
     justify-content: space-between;
     max-width: 1720px;
     margin-bottom: 200px;
+    gap: 50px;
 }
 
 .card {
