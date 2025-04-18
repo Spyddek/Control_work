@@ -11,5 +11,6 @@
         "ultrabold",
         "VUET",
         "Vuetoken"
-    ]
+    ],
+    "liveServer.settings.port": 5501
 }
