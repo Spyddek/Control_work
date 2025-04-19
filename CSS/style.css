@@ -138,6 +138,7 @@ main {
 .header_menu nav ul li:hover > ul {
     display: block;
 }
+
 .header_menu nav ul li a:hover {
     color: #ffffff;
 }
@@ -165,14 +166,14 @@ main {
     flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: center;
-    width: 24.006668090820312px; 
+    max-width: 24.006668090820312px; 
     height: 28px;
     gap: 5px;
 }
 
 .HexaCore {
-    width: 144.04000854492188px;
-    height: 21px;
+    max-width: 144.04000854492188px;
+    max-height: 21px;
     top: 3.55px;
     left: 35.96px;
 }
@@ -261,7 +262,8 @@ nav ul li:hover > ul {
 
 .main_logo {
     flex: 1;
-    width: 1100px;
+    max-width: 1100px;
+    min-width: 290px;
 }
 
 .main_logo p {
@@ -289,8 +291,8 @@ nav ul li:hover > ul {
     left: 50%;
     transform: translateX(-50%);
     bottom: 0;
-    width: 310px;
-    height: 30px;
+    max-width: 310px;
+    max-height: 30px;
     background: url('/Img/img-Main/Волна.svg') no-repeat center;
     background-size: contain;
 }
@@ -302,7 +304,8 @@ nav ul li:hover > ul {
 
 .button_main {
     display: flex;
-    width: 1100px;
+    max-width: 1100px;
+    width: 100%;
     margin-top: 51px;
     gap: 20px;
 }
@@ -314,7 +317,8 @@ nav ul li:hover > ul {
     padding-left: 30px;
     padding-right: 41px;
     text-align: start;
-    width: 270px;
+    max-width: 270px;
+    width: 100%;
     background-color: #E3FE0F;
     color: black;
     border: 1px solid #E3FE0F;
@@ -837,12 +841,289 @@ textarea::placeholder {
     transform: rotate(180deg);
 }
 
-/* Адаптив: всё в колонку ниже 800px */
-@media (max-width: 800px) {
+/* --------------------
+   BREAKPOINT: 1200px
+   -------------------- */
+   @media (max-width: 1200px) {
+    h1 {
+        font-family: 'NeueMachina_Bold', sans-serif;
+        font-weight: 700;
+        font-size: 3.25em;
+        line-height: 120%;
+        color: #ffffff;
+    }
+    h2 {
+        font-family: 'NeueMachina_Bold', sans-serif;
+        font-weight: 700;
+        font-size: 2.625em;
+        line-height: 120%;
+        color: #ffffff;
+    }
+    h3 {
+        font-family: 'NeueMachina_Regular', sans-serif;
+        font-weight: 500;
+        font-size: 1.5em;
+        line-height: 120%;
+        color: #ffffff;
+    }
+    .text-large {
+        font-family: 'NeueMachina_Medium', sans-serif;
+        font-weight: 400;
+        font-size: 1.25em;
+        line-height: 140%;
+        color: #ffffff;
+    }
+    .text-regular {
+        font-family: 'Plex_Mono', sans-serif;
+        font-weight: 400;
+        font-size: 1em;
+        line-height: 140%;
+        color: #ffffff;
+    }
+    .text-small {
+        font-family: 'Plex_Mono', sans-serif;
+        font-weight: 400;
+        font-size: 0.875em;
+        line-height: 140%;
+        color: #ffffff;
+    }
+
+    .header_wrapper {
+        padding: 20px 40px;
+      }
+      .header_section {
+        flex-wrap: wrap;
+        gap: 15px;
+      }
+      .logo_menu {
+        width: 100%;
+      }
+      .caption {
+        padding: 5px 15px;
+        font-size: 0.9em;
+      }
+    
+      /* Навигация */
+      .nav_links {
+        gap: 10px;
+      }
+      header nav ul li a {
+        padding: 0 15px;
+        font-size: 0.95em;
+      }
+    
+      /* Кнопка DApp */
+      .dapp_button {
+        padding: 6px 25px;
+        font-size: 0.9em;
+      }
+    
+      /* Main */
+      .main_logo {
+        max-width: 900px;
+        min-width: 200px;
+      }
+      .main_p {
+        margin-top: 15px;
+      }
+      .button_main {
+        flex-wrap: wrap;
+        gap: 15px;
+      }
+      .button_main_view,
+      .button_main_buy {
+        flex: 1 1 45%;
+        max-width: none;
+        padding: 20px 30px;
+      }
+      .usd_wrap {
+        flex-direction: column;
+        gap: 20px;
+      }
+      .img_Chart {
+        margin-top: 20px;
+      }
+
+    /* Контейнеры */
+    .info-container {
+      max-width: 90%;
+      padding: 15px;
+      margin-bottom: 60px;
+    }
+    .info-table {
+      grid-template-columns: 1fr;     /* одна колонка вместо двух */
+      gap: 15px;
+      max-height: none;
+    }
+    .info-item,
+    .info-item-address {
+      width: 100%;
+    }
+  
+    /* Блок START */
+    .start {
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      gap: 20px;
+    }
+    .start_text {
+      width: 100%;
+    }
+    .logo_start {
+      max-width: 100%;
+      margin-top: 0;
+    }
+    .button_main_get_stated {
+      width: 100%;
+      margin-top: 0;
+    }
+  
+    /* Общие контейнеры */
+    .container {
+      width: 100%;
+      flex-direction: column;
+      height: auto;
+    }
+    .intermediate_text {
+      text-align: center;
+    }
+  
+    /* Форма */
+    .form-container {
+      max-width: 90%;
+      margin: 100px auto 50px;
+      padding: 0 10px;
+    }
+    .form-container h2 {
+      margin-top: 80px;
+    }
+  
+    /* FAQ */
     .faq {
-        grid-template-columns: 1fr;
+      grid-template-columns: 1fr;     /* одна колонка */
+      padding: 60px 20px;
+      gap: 40px;
     }
-    .faq__left {
-        margin-bottom: 60px;
+    .faq__btn {
+      width: 100%;
     }
-}
+  }
+  
+  /* --------------------
+     BREAKPOINT: 960px
+     -------------------- */
+  @media (max-width: 960px) {
+
+    .header_wrapper {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+        gap: 15px;
+      }
+      .header_section {
+        justify-content: center;
+      }
+      .nav_links {
+        display: none;           /* прячем обычную навигацию */
+      }
+      /* здесь можно подключить свою мобильную «гамбургер‑меню» */
+    
+      /* Caption & DApp */
+      .caption {
+        font-size: 0.85em;
+      }
+      .dapp_button {
+        padding: 5px 20px;
+        font-size: 0.85em;
+      }
+    
+      /* Main */
+      .main_logo {
+        max-width: 100%;
+      }
+      .main_logo img {
+        width: 150px;
+        height: 150px;
+      }
+      .main_p {
+        font-size: 0.9em;
+      }
+      .button_main {
+        flex-direction: column;
+      }
+      .button_main_view,
+      .button_main_buy {
+        width: 100%;
+        padding: 15px;
+        font-size: 0.9em;
+      }
+    
+      /* USD & Chart */
+      .usd_wrap {
+        width: 100%;
+        justify-content: space-around;
+      }
+      .text_USD {
+        margin-top: 50px;
+      }
+      .img_Chart {
+        margin-top: 30px;
+      }
+    
+      /* Advantages */
+      .Advantages {
+        width: 100%;
+        padding: 0 15px;
+      }
+      .advantage-blocks {
+        flex-direction: column;
+        gap: 20px;
+      }
+    
+      /* Roadmap */
+      .roadmap {
+        flex-direction: column;
+        gap: 40px;
+        margin-bottom: 100px;
+      }
+
+    /* Ещё более узкие контейнеры */
+    .info-container {
+      max-width: 95%;
+      padding: 10px;
+      margin-bottom: 40px;
+    }
+    .info-table {
+      gap: 10px;
+    }
+  
+    /* START */
+    .start {
+      gap: 15px;
+    }
+    .button_main_get_stated {
+      padding: 20px;
+      font-size: 16px;
+    }
+  
+    /* Форма */
+    .form-container {
+      margin: 60px auto;
+      padding: 0 5px;
+    }
+    input[type="text"],
+    textarea {
+      padding: 15px;
+      font-size: 16px;
+    }
+    .submit-btn {
+      padding: 10px;
+      font-size: 16px;
+    }
+  
+    /* FAQ */
+    .faq__title {
+      font-size: 48px;
+    }
+  }
