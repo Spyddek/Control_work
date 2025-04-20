@@ -395,6 +395,7 @@ nav ul li:hover > ul {
     max-height: 745px;
     margin-top: 50px;
     height: fit-content;
+    gap: 80px;
 }
 
 .Advantages h2 {
@@ -405,7 +406,6 @@ nav ul li:hover > ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
     gap: 20px;
 }
 
@@ -416,7 +416,6 @@ nav ul li:hover > ul {
     box-shadow: 0 0 10px 0 #3030308e;
     border-radius: 15px;
     padding: 15px;
-    margin-top: 40px;
     color: #17161E;
     background-color: #E3FE0F;
     height: fit-content;
@@ -751,6 +750,7 @@ textarea::placeholder {
     display: flex;
     justify-content: space-between;
     max-width: 1720px;
+    min-width: 760px;
     margin: 0 auto;
     padding: 80px 24px;
     display: grid;
@@ -890,123 +890,123 @@ textarea::placeholder {
 
     .header_wrapper {
         padding: 20px 40px;
-      }
-      .header_section {
+    }
+    .header_section {
         flex-wrap: wrap;
         gap: 15px;
-      }
-      .logo_menu {
+    }
+    .logo_menu {
         width: 100%;
-      }
-      .caption {
+    }
+    .caption {
         padding: 5px 15px;
         font-size: 0.9em;
-      }
-    
-      /* Навигация */
-      .nav_links {
+    }
+
+    /* Навигация */
+    .nav_links {
         gap: 10px;
-      }
-      header nav ul li a {
+    }
+    header nav ul li a {
         padding: 0 15px;
         font-size: 0.95em;
-      }
-    
-      /* Кнопка DApp */
-      .dapp_button {
+    }
+
+    /* Кнопка DApp */
+    .dapp_button {
         padding: 6px 25px;
         font-size: 0.9em;
-      }
-    
-      /* Main */
-      .main_logo {
+    }
+
+    /* Main */
+    .main_logo {
         max-width: 900px;
         min-width: 200px;
-      }
-      .main_p {
+    }
+    .main_p {
         margin-top: 15px;
-      }
-      .button_main {
+    }
+    .button_main {
         flex-wrap: wrap;
         gap: 15px;
-      }
-      .button_main_view,
-      .button_main_buy {
+    }
+    .button_main_view,
+    .button_main_buy {
         flex: 1 1 45%;
         max-width: none;
         padding: 20px 30px;
-      }
-      .usd_wrap {
+    }
+    .usd_wrap {
         flex-direction: column;
         gap: 20px;
-      }
-      .img_Chart {
+    }
+    .img_Chart {
         margin-top: 20px;
-      }
+    }
 
     /* Контейнеры */
     .info-container {
-      max-width: 90%;
-      padding: 15px;
-      margin-bottom: 60px;
+        max-width: 90%;
+        padding: 15px;
+        margin-bottom: 60px;
     }
     .info-table {
-      grid-template-columns: 1fr;     /* одна колонка вместо двух */
-      gap: 15px;
-      max-height: none;
+        grid-template-columns: 1fr;     /* одна колонка вместо двух */
+        gap: 15px;
+        max-height: none;
     }
     .info-item,
     .info-item-address {
-      width: 100%;
+        width: 100%;
     }
   
     /* Блок START */
     .start {
-      flex-direction: column;
-      width: 100%;
-      height: auto;
-      gap: 20px;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        gap: 20px;
     }
     .start_text {
-      width: 100%;
+        width: 100%;
     }
     .logo_start {
-      max-width: 100%;
-      margin-top: 0;
+        max-width: 100%;
+        margin-top: 0;
     }
     .button_main_get_stated {
-      width: 100%;
-      margin-top: 0;
+        width: 100%;
+        margin-top: 0;
     }
   
     /* Общие контейнеры */
     .container {
-      width: 100%;
-      flex-direction: column;
-      height: auto;
+        width: 100%;
+        flex-direction: column;
+        height: auto;
     }
     .intermediate_text {
-      text-align: center;
+        text-align: center;
     }
   
     /* Форма */
     .form-container {
-      max-width: 90%;
-      margin: 100px auto 50px;
-      padding: 0 10px;
+        max-width: 90%;
+        margin: 100px auto 50px;
+        padding: 0 10px;
     }
     .form-container h2 {
-      margin-top: 80px;
+        margin-top: 80px;
     }
   
     /* FAQ */
     .faq {
-      grid-template-columns: 1fr;     /* одна колонка */
-      padding: 60px 20px;
-      gap: 40px;
+        grid-template-columns: 1fr;     /* одна колонка */
+        padding: 60px 20px;
+        gap: 40px;
     }
     .faq__btn {
-      width: 100%;
+        width: 100%;
     }
   }
   
@@ -1020,110 +1020,110 @@ textarea::placeholder {
         align-items: center;
         padding: 15px;
         gap: 15px;
-      }
-      .header_section {
+    }
+    .header_section {
         justify-content: center;
-      }
-      .nav_links {
+    }
+    .nav_links {
         display: none;           /* прячем обычную навигацию */
-      }
-      /* здесь можно подключить свою мобильную «гамбургер‑меню» */
-    
-      /* Caption & DApp */
-      .caption {
+    }
+    /* здесь можно подключить свою мобильную «гамбургер‑меню» */
+
+    /* Caption & DApp */
+    .caption {
         font-size: 0.85em;
-      }
-      .dapp_button {
+    }
+    .dapp_button {
         padding: 5px 20px;
         font-size: 0.85em;
-      }
-    
-      /* Main */
-      .main_logo {
+    }
+
+    /* Main */
+    .main_logo {
         max-width: 100%;
-      }
-      .main_logo img {
+    }
+    .main_logo img {
         width: 150px;
         height: 150px;
-      }
-      .main_p {
+    }
+    .main_p {
         font-size: 0.9em;
-      }
-      .button_main {
+    }
+    .button_main {
         flex-direction: column;
-      }
-      .button_main_view,
-      .button_main_buy {
+    }
+    .button_main_view,
+    .button_main_buy {
         width: 100%;
         padding: 15px;
         font-size: 0.9em;
-      }
-    
-      /* USD & Chart */
-      .usd_wrap {
+    }
+
+    /* USD & Chart */
+    .usd_wrap {
         width: 100%;
         justify-content: space-around;
-      }
-      .text_USD {
+    }
+    .text_USD {
         margin-top: 50px;
-      }
-      .img_Chart {
+    }
+    .img_Chart {
         margin-top: 30px;
-      }
-    
-      /* Advantages */
-      .Advantages {
+    }
+
+    /* Advantages */
+    .Advantages {
         width: 100%;
         padding: 0 15px;
-      }
-      .advantage-blocks {
+    }
+    .advantage-blocks {
         flex-direction: column;
         gap: 20px;
-      }
-    
-      /* Roadmap */
-      .roadmap {
+    }
+
+    /* Roadmap */
+    .roadmap {
         flex-direction: column;
         gap: 40px;
         margin-bottom: 100px;
-      }
+    }
 
     /* Ещё более узкие контейнеры */
     .info-container {
-      max-width: 95%;
-      padding: 10px;
-      margin-bottom: 40px;
+        max-width: 95%;
+        padding: 10px;
+        margin-bottom: 40px;
     }
     .info-table {
-      gap: 10px;
+        gap: 10px;
     }
   
     /* START */
     .start {
-      gap: 15px;
+        gap: 15px;
     }
     .button_main_get_stated {
-      padding: 20px;
-      font-size: 16px;
+        padding: 20px;
+        font-size: 16px;
     }
   
     /* Форма */
     .form-container {
-      margin: 60px auto;
-      padding: 0 5px;
+        margin: 60px auto;
+        padding: 0 5px;
     }
     input[type="text"],
     textarea {
-      padding: 15px;
-      font-size: 16px;
+        padding: 15px;
+        font-size: 16px;
     }
     .submit-btn {
-      padding: 10px;
-      font-size: 16px;
+        padding: 10px;
+        font-size: 16px;
     }
   
     /* FAQ */
     .faq__title {
-      font-size: 48px;
+        font-size: 48px;
     }
   }
